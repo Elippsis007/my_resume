@@ -27,16 +27,16 @@
                     <div class="col">
                         <ul id="nav" class="list-inline menucontainer">
                             <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
-                                <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                                <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem">
-                                <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
+                                <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item menuitem">
-                                <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
+                                <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item menuitem">
-                                <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-download fa-pulse" aria-hidden="true"></i><span>Download</span></a>
+                                <a href="assets/cv/Michael_Drumm_CV.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download fa-pulse" aria-hidden="true"></i><span>Download</span></a>
                             </li>
                         </ul>
                     </div>
@@ -183,7 +183,7 @@
                 <hr>
                 <p class="inline-block">
                     Looking for my CV? Feel free to download it here.
-                    <a href="#" target="_blank" class="cv-pdf">
+                    <a href="assets/cv/Michael_Drumm_CV.pdf" target="_blank" class="cv-pdf">
                     <i class="fa fa-download fa-pulse" aria-hidden="true"></i>
                     <span class="sr-only">Download Link.</span>
                     </a>
@@ -208,8 +208,26 @@
                 </ul>
             </div>
         </div>
-        
+            
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up fa-bounce"></i></button>
+    
+    <script>
+            /*Get the button:*/ 
+            mybutton = document.getElementById("myBtn");
+            /*When the user scrolls down 20px from the top of the document, show the button*/
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+            } else{mybutton.style.display = "none";}            
+                }
 
+            /*When the user clicks on the button, scroll to the top of the document*/
+            function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+    </script>
     </footer>
 </body>
 </html>

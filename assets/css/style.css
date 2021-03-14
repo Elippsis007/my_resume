@@ -2,6 +2,10 @@
 
 /* -------------------------------------------------------Colours*/
 
+.bg-color-contact {
+    background-color: #fff;
+}
+
 .bg-color-name-title {
     background-color: #676767;
 }
@@ -167,6 +171,7 @@ h1,h2,h3,h4 {
 .inline-block {
     display: inline-block;
 }
+
 
 /* -------------------------------------------------------Footer */
 
@@ -394,4 +399,66 @@ hr {
 
 history-items {
     margin-bottom: 30px;
+}
+
+/* -------------------------------------------------------Form Styling*/
+
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.btn-secondary {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-radius: 2em;
+    color: #fafafa;
+    background-color: #e75e1f;
+    font-size: 18px;
+}
+
+/* -------------------------------------------------------Media Queries*/
+@media(min-width: 992px) {
+    .center-form {
+    padding-top: 30px;
+    min-height: 20px;
+    margin: 0 auto;
+    max-width: 50%;
+    }    
+}
+
+/* -------------------------------------------------------To the Top Button*/
+
+#myBtn {
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #e75e1f;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 25px;
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin: auto;
+}
+
+.fa-arrow-up:before {
+    content: "\f062";
+    margin: auto;
+    font-size: 33px;
+    line-height: -1px;
+}
+
+
+#myBtn:hover {
+  background-color: #676767; /* Add a dark-grey background on hover */
 }
