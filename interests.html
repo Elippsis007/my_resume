@@ -52,69 +52,23 @@
     </header>
     <section class="container-fluid">
         <div class="row">
-            <div class="col-md-4 bg-color-personal-info section-column">
+            <div class="col-md-4 bg-color-work-location section-column">
                 <div class="row">
                     <div class="col-12">
                         <h3 class="section-heading uppercase">
-                            Personal Info
+                            locations I am available to work <i class="fa fa-location-arrow"></i>
                             <hr>
                         </h3>
-                        
                     </div>
                 </div>
-                <div class="personal-info-item">
-                    <div class="key">
-                        <p class="uppercase">
-                            Name: 
-                        </p>
-                    </div>
-                    <div class="value">
-                        <p>
-                            Michael Drumm
-                        </p>
-                    </div>
-                </div>
-                <div class="personal-info-item">
-                    <div class="key">
-                        <p class="uppercase">
-                            Address:
-                        </p>
-                    </div>
-                    <div class="value">
-                        <p>
-                            210 Beech Park, Leixlip, Kildare
-                        </p>
-                    </div>
-                </div>
-                <div class="personal-info-item">
-                    <div class="key">
-                        <p class="uppercase">
-                            Phone: 
-                        </p>
-                    </div>
-                    <div class="value">
-                        <p>
-                            +353 (0)83 064 9849
-                        </p>
-                    </div>
-                </div>
-                <div class="personal-info-item">
-                    <div class="key">
-                        <p class="uppercase">
-                            Email: 
-                        </p>
-                    </div>
-                    <div class="value">
-                        <p>
-                            <a href="mailto:michaeldrmm@gmail.com? subject=subjext text">michaeldrmm@gmail.com</a> 
-                        </p>
-                    </div>
-                </div>
+
+                <div id="map"></div>
+                
             </div>
             <div class="col-md-8 bg-color-three-reasons section-column">
                 <div class="row">
                     <div class="col">
-                        <h3 class="section-heading uppercase">a little about me</h3>
+                        <h3 class="section-heading uppercase">a little more about me</h3>
                     </div>
                </div>
                <div class="row">
@@ -124,15 +78,16 @@
                                <i class="three-reasons-icon fa fa-question" aria-hidden="true"></i>
                            </div>
                            <div class="col-10">
-                               <h4 class="bg-color-three-reasons-heading uppercase">What do I do?
+                               <h4 class="bg-color-three-reasons-heading uppercase">What do I like to do?
                                    <hr>
                                </h4>
                                <p>
-                                   I'm currently enrolled in a Full Stack Developer course with Code Institute in Dublin. I'm currently working
-                                   with Cisco as a Recruitment Consultant. I've done recruitment now for a number of years but I've always kept myself busy
-                                   learning Python outside of working and because of my love for programming I worked hard to save and I applied to Code Instute for 
-                                   the Full Stack Development Course. As you can see on the Resume section of this digital CV I've built a bar chart to showcase my strengths
-                                   in skills learned on this course. 
+                                   Some of the things I like to do when I have free time and to wind-down
+                                   is to play some online gaming with my friends. If I'm not gaming online I'm studying or watching tutorial
+                                   videos on YouTube on programming and sometimes it's videos for a problem I am having when I am progressing in my course.
+                                   Most weekends I am watching football! I am a massive Newcastle United fan. It's been a tough season 2020/2021 for NUFC
+                                   but we always seem to keep in the Premier League in the last few years! I like to read football biography books too. Somedays I breakout
+                                   books that I use to aid me in my programming studies and attempt the mini projects for fun!  
                                </p>
                            </div>
                        </div>
@@ -143,15 +98,12 @@
                                <i class="three-reasons-icon fa fa-thumbs-up" aria-hidden="true"></i>
                            </div>
                            <div class="col-10">
-                               <h4 class="bg-color-three-reasons-heading uppercase">How do I do it?
+                               <h4 class="bg-color-three-reasons-heading uppercase">Books I am using to improve my skills
                                    <hr>
                                </h4>
                                <p>
-                                    I follow form as well as function. I learn by example and guidance, I ask questions, dig deep for answers
-                                    and have no problem reaching out to the greatest online communities that is in Software Development.
-                                    Some of the websites I would be active and reach out to for assistance are listed below.
                                     <ul>
-                                        <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
+                                        <li> <img src="https://m.media-amazon.com/images/I/510-dE3N1PL.jpg" alt="a book on python" target="_blank"></li>
                                         <li><a href="https://github.com/" target="_blank">GitHub</a></li>
                                         <li> <a href="https://www.freecodecamp.org/">freeCodeCamp</a>- Currently enrolled in courses</li>
                                         <li> <a href="https://www.reddit.com/">reddit</a></li>
@@ -244,8 +196,21 @@
             function topFunction() {
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-            }
+            }        
     </script>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                center: {
+                    lat: 46.619261,
+                    lng: -33.134766
+                }
+            });
+        }
+        </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb8Vg1PAHs8Ot22yRhB5XEjb96MwO-4_E&callback=initMap"></script>
     </footer>
 </body>
 </html>
