@@ -473,3 +473,54 @@ history-items {
 
 /*--------------------------MAPS-------------------------------------------*/
 div#map {min-height: 360px;}
+
+
+/*---------------------------------------BOOKS-----------------------------------------*/
+#python-book {
+    border-style: none;
+    height: 165px;
+    width: 130px;
+    
+}
+
+#html-jd {
+    border-style: none;
+    height: 165px;
+    width: 130px;
+    
+}
+
+#java-jd {
+    border-style: none;
+    height: 165px;
+    width: 130px;
+    }
+
+#smart-js {
+    border-style: none;
+    height: 165px;
+    width: 130px;
+}
+
+#smart-jq {
+    border-style: none;
+    height: 165px;
+    width: 130px;
+}
+
+#smart-boots {
+    border-style: none;
+    height: 165px;
+    width: 130px;
+}
+
+.li-style {
+    list-style-type: none;
+    padding-left: 8px;
+}
+
+.tile li {
+    display: inline;
+    float: left;
+    padding-top: 5px;
+}
