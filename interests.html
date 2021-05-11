@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
-    
+    <link rel="stylesheet" href="map.js" type="text"/>
     
     <title>Michael</title>
 </head>
@@ -62,9 +62,7 @@
                     </div>
                 </div>
 
-                <div id="map">
-                    
-                </div>
+                <div id="map"></div>
                 
             </div>
             <div class="col-md-8 bg-color-three-reasons section-column">
@@ -201,12 +199,19 @@
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
             }        
     </script>
-    
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb8Vg1PAHs8Ot22yRhB5XEjb96MwO-4_E&callback=initMap"
-        async defer
-        ></script>
-    
-    
-    </footer>
+        </footer>
+        <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                center: {
+                    lat: 46.619261,
+                    lng: -33.134766
+                }
+            });
+        }
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDzGZi8F1_r2D39GmvvjePtUkJnMYDRu8&callback=initMap"></script>
 </body>
 </html>
