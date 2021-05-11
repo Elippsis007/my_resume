@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
-    <link rel="stylesheet" href="map.js" type="text"/>
-    
+    <link rel="stylesheet" href="gmaps.js" type="text/javascript">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>Michael</title>
 </head>
 <body>
@@ -62,7 +62,7 @@
                     </div>
                 </div>
 
-                <div id="map"></div>
+                <div id="gmaps"></div>
                 
             </div>
             <div class="col-md-8 bg-color-three-reasons section-column">
@@ -182,7 +182,9 @@
             
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up fa-bounce"></i></button>
     
-    <script>
+    
+        </footer>
+        <script>
             /*Get the button:*/ 
             mybutton = document.getElementById("myBtn");
             /*When the user scrolls down 20px from the top of the document, show the button*/
@@ -199,19 +201,10 @@
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
             }        
     </script>
-        </footer>
-        <script>
-        function initMap() {
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 3,
-                center: {
-                    lat: 46.619261,
-                    lng: -33.134766
-                }
-            });
-        }
-    </script>
+
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDzGZi8F1_r2D39GmvvjePtUkJnMYDRu8&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAnW5lT7OU_0lkPuSbt_WwR1y5izfqdUA&callback=initMap"
+  type="text/javascript"></script>
+    
 </body>
 </html>
