@@ -524,3 +524,98 @@ div#map {min-height: 360px;}
     float: left;
     padding-top: 5px;
 }
+
+#contnum {
+    text-align: center;
+   
+}
+
+#emailto {
+    text-align: center;
+    text-decoration: none;
+    }
+
+.emailto {
+    color: white;
+    text-decoration: none;
+}
+
+.emailto:hover {
+    color: #e75e1f;
+    font-size: larger;
+    text-decoration: none;
+}
+#or {
+    text-align: center;
+}
+
+#hr-contact {
+    width: 25%;
+    margin: auto;
+}
+
+#phone {
+    color: white;
+    text-decoration: none;
+    }
+
+#phone:hover {
+    color: #25D366;
+    font-size: larger;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-left: 45%;
+  margin-right: 45%;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-radius: 30px;
+  background-color: #525252;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+#phone{
+    font-size: x-large;
+}
+
+#phone:hover {
+    color: #25D366;
+    transition: 2s;
+    transform: rotate(180deg);
+    font-size: 60px;
+}
+
+#arrow {
+    font-size: x-large;
+    color: #e75e1f;
+}
+
+#arrow:hover {
+    transition: 2s;
+    transform: rotate(180deg);
+    font-size: 30px;
+}
+
+.email{
+    font-size: x-large;
+}
+
+.email:hover {
+    color: #25D366;
+    transition: 2s;
+    font-size: 60px;
+}

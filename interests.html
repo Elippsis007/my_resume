@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    
        
     <title>Michael</title>
 </head>
@@ -181,7 +182,9 @@
             
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up fa-bounce"></i></button>
     
-    <script>
+    
+        </footer>
+<script>
             /*Get the button:*/ 
             mybutton = document.getElementById("myBtn");
             /*When the user scrolls down 20px from the top of the document, show the button*/
@@ -198,23 +201,21 @@
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
             }        
     </script>
-        </footer>
 
-<script>
-
-function initMap() {
-var map = new google.maps.Map(document.getElementById("map"), {
-    zoom:3,
-    center: {
-lat:46.619261,
-lng: -33.134766
-    } 
-});
-}
-
+    <script>
+        function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom:3,
+            center: {
+            lat:46.619261,
+            lng: -33.134766
+                } 
+                        });
+                            }
 </script>
 <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAnW5lT7OU_0lkPuSbt_WwR1y5izfqdUA=initMap&libraries=&v=weekly" defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAnW5lT7OU_0lkPuSbt_WwR1y5izfqdUA&callback=initMap" async defer></script>
+
     
 </body>
 </html>
