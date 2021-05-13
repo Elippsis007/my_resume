@@ -526,6 +526,10 @@ div#map {min-height: 360px;}
     padding-top: 5px;
 }
 
+.tile {
+    align-items: center;
+}
+
 #contnum {
     text-align: center;
    
@@ -556,6 +560,10 @@ div#map {min-height: 360px;}
     margin-right: auto;
 }
 
+.books {
+    width: 88%;
+}
+
 #phone {
     color: white;
     text-decoration: none;
@@ -564,6 +572,11 @@ div#map {min-height: 360px;}
 #phone:hover {
     color: #25D366;
     font-size: larger;
+}
+
+#books {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card {

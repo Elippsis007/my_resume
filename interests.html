@@ -33,7 +33,7 @@
                                 <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-interests list-inline-item menuitem">
-                                <a href="interests.html" class="hvr-sweep-to-bottom"><i class="fa fa-users" aria-hidden="true"></i><span>Interests</span></a>
+                                <a href="interests.html" class="hvr-sweep-to-bottom"><i class="fa fa-gamepad"></i><span>Interests</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-github list-inline-item menuitem">
                                 <a href="https://github.com/Elippsis007" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a>
@@ -99,9 +99,10 @@
                            </div>
                            <div class="col-10">
                                <h4 class="bg-color-three-reasons-heading uppercase">Books I am using to improve my skills
-                                   <hr>
+                                   <hr class="booksw">
                                </h4>
-                               <p>
+                               <div id="books">
+                               
                                     <ul class="tile">
                                         <li class="li-style"> <img src="https://m.media-amazon.com/images/I/510-dE3N1PL.jpg" id="python-book" alt="a book on python" target="_blank"></li>
                                         <li class="li-style"> <img src="https://images-na.ssl-images-amazon.com/images/I/31b4K-hFH-L._SX395_BO1,204,203,200_.jpg" id="html-jd" target="_blank"></li>
@@ -110,7 +111,8 @@
                                         <li class="li-style"> <img src="https://images-na.ssl-images-amazon.com/images/I/51-eVLS3PLL._SX345_BO1,204,203,200_.jpg" id="smart-jq" target="_blank"></li>
                                         <li class="li-style"> <img src="https://images-na.ssl-images-amazon.com/images/I/41GTBaVKAyL._SX404_BO1,204,203,200_.jpg" id="smart-boots" target="_blank"></li>
                                     </ul>
-                               </p>
+                               
+                                </div>
                            </div>   
                        </div>
                    </div>
@@ -146,7 +148,7 @@
                 
                 <p class="inline-block">
                     A Jnr. Full Stack Web Developer taking on a course with CodeInstitute since February 2021.
-                    Skilled in HTML and CSS and currently progressing to my first Milestone Project.
+                    Skilled in HTML and CSS and currently progressing to my second Milestone Project.
                 </p>
             </div>
             <div class="col-sm-4">
@@ -204,15 +206,36 @@
 
         <script> 
         
+        
+
         function initMap(){
-            
+            // Map options
             let options = {
                 zoom: 4, 
-                center: {lat:53.1424,lng:-7.6921}
+                center: {lat:53.1424,lng:-7.6921},
+                
             }
+            // New map
             let map = new google.maps.Map(document.getElementById("map"), options);
-
+          
+            addMarker({lat:-20.5000,lng:-55.0000});
+            addMarker({lat:53.1424,lng:-7.6921});
+            addMarker({lat:52.1326,lng:5.2913});
+            addMarker({lat:42.3601,lng:-71.0589});
+            addMarker({lat:43.6532,lng:-79.3832});
+            addMarker({lat:38.7223,lng:-9.1393});
+            addMarker({lat:60.4720,lng:8.4689});
+            addMarker({lat:41.8719,lng:12.5674});
+            
+            // Add Marker Function
+            function addMarker(coords){
+            let marker = new google.maps.Marker({
+                position:coords,
+                map:map,
+            })
+            }
         }
+        
         </script>
 
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9LkJ_Uki1NZwdEE0KBYjSVFsE0vJgqcQ&callback=initMap" type="text/javascript"> </script>
