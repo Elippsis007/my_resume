@@ -1,5 +1,12 @@
 @import url('http://fonts.googleapis.com/css?family=Roboto');
 
+.patients:hover {
+    transform: scale(1.5);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #e84610;
+    transition: 1s;
+}
+
 br {
   display: block;
   line-height: 1.6em;
