@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="icon" href="assets/images/favicon-32x32.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/github-information.js"></script>
@@ -14,6 +15,7 @@
 
     <title>Michael Drumm - Resume</title>
 </head>
+
 <body>
     <header>
         <div class="row no-gutters">
@@ -30,22 +32,28 @@
                     <div class="col">
                         <ul id="nav" class="list-inline menucontainer">
                             <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
-                                <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                                <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home"
+                                        aria-hidden="true"></i><span>Home</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem">
-                                <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
+                                <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap"
+                                        aria-hidden="true"></i><span>Resume</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-interests list-inline-item menuitem">
-                                <a href="interests.html" class="hvr-sweep-to-bottom"><i class="fa fa-gamepad"></i><span>Interests</span></a>
+                                <a href="interests.html" class="hvr-sweep-to-bottom"><i
+                                        class="fa fa-gamepad"></i><span>Interests</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-github list-inline-item menuitem">
-                                <a href="github.html" class="hvr-sweep-to-bottom"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+                                <a href="github.html" class="hvr-sweep-to-bottom"><i class="fa fa-github"
+                                        aria-hidden="true"></i><span>GitHub</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item menuitem">
-                                <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
+                                <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o"
+                                        aria-hidden="true"></i><span>Contact</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item menuitem">
-                                <a href="assets/cv/Michael Drumm CV 2021.docx" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download fa-pulse" aria-hidden="true"></i><span>Download</span></a>
+                                <a href="assets/cv/michael_drumm_cv.pdf" target="_blank" class="hvr-sweep-to-bottom"><i
+                                        class="fa fa-download fa-pulse" aria-hidden="true"></i><span>Download</span></a>
                             </li>
                         </ul>
                     </div>
@@ -53,31 +61,32 @@
             </div>
         </div>
     </header>
-    
+
     <div class="card">
-    <section class="container">
-        
-        <div class="row bg-color-contact">
-            <div class="col">
-                <h3 class="contact-heading uppercase text-center">My GitHub Projects</h3>
-                <h5 class="text-center">To show off! I've built a function so you can also search on other GitHub user profiles</h5>
-                <p class="text-center">GitHub profile: Elippsis007</p>
-                <div class="center-form">
-                    <input type="text" id="gh-username" value="Elippsis007" oninput="fetchGitHubInformation()" />
-                    <div id="gh-user-data"></div>
-                    <div id="gh-repo-data"></div>
+        <section class="container">
+
+            <div class="row bg-color-contact">
+                <div class="col">
+                    <h3 class="contact-heading uppercase text-center">My GitHub Projects</h3>
+                    <h5 class="text-center">To show off! I've built a function so you can also search on other GitHub
+                        user profiles</h5>
+                    <p class="text-center">GitHub profile: Elippsis007</p>
+                    <div class="center-form">
+                        <input type="text" id="gh-username" value="Elippsis007" oninput="fetchGitHubInformation()" />
+                        <div id="gh-user-data"></div>
+                        <div id="gh-repo-data"></div>
+                    </div>
                 </div>
-           </div>
-        </div> 
-    </section>
+            </div>
+        </section>
     </div>
-    
+
     <footer class="container-fluid">
         <div id="footer-details" class="row">
             <div class="col-sm-4">
                 <h5 class="uppercase general-sub">About</h5>
                 <hr>
-                
+
                 <p class="inline-block">
                     A Jnr. Full Stack Web Developer taking on a course with Code Institute since February 2021.
                     Skilled in HTML and CSS and currently progressing to my 2nd Milestone Project.
@@ -88,9 +97,9 @@
                 <hr>
                 <p class="inline-block">
                     Looking for my CV? Feel free to download it here.
-                    <a href="assets/cv/Michael Drumm CV 2021.docx" target="_blank" class="cv-pdf">
-                    <i class="fa fa-download fa-pulse" aria-hidden="true"></i>
-                    <span class="sr-only">Download Link.</span>
+                    <a href="assets/cv/michael_drumm_cv.pdf" target="_blank" class="cv-pdf">
+                        <i class="fa fa-download fa-pulse" aria-hidden="true"></i>
+                        <span class="sr-only">Download Link.</span>
                     </a>
                 </p>
             </div>
@@ -99,7 +108,8 @@
                 <hr>
                 <ul class="list-inline social-links">
                     <li class="list-inline-item">
-                        <a target="_blank" href="https://www.linkedin.com/in/michael-drumm-88947716a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BE%2FDrMgDmTUO8KtB4gJ92Hw%3D%3D">
+                        <a target="_blank"
+                            href="https://www.linkedin.com/in/michael-drumm-88947716a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BE%2FDrMgDmTUO8KtB4gJ92Hw%3D%3D">
                             <i class="fa fa-linkedin" aria-hidden="true"></i>
                             <span class="sr-only">LinkedIn</span>
                         </a>
@@ -113,26 +123,27 @@
                 </ul>
             </div>
         </div>
-            
+
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up fa-bounce"></i></button>
-    
-    <script>
-            /*Get the button:*/ 
+
+        <script>
+            /*Get the button:*/
             mybutton = document.getElementById("myBtn");
             /*When the user scrolls down 20px from the top of the document, show the button*/
-            window.onscroll = function() {scrollFunction()};
+            window.onscroll = function () { scrollFunction() };
             function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-            } else{mybutton.style.display = "none";}            
-                }
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else { mybutton.style.display = "none"; }
+            }
 
             /*When the user clicks on the button, scroll to the top of the document*/
             function topFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
             }
-    </script>
+        </script>
     </footer>
 </body>
+
 </html>
